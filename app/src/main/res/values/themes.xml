@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Parented on a *dark* NoActionBar theme and given the palette's darkest colour as the window
+        background. Without this the framework paints the default light window before the first
+        Compose frame, which is the white flash at launch.
+
+        The status and navigation bars are transparent because the activity draws edge to edge;
+        `windowLightStatusBar=false` asks the system for light icons, which is what a #001219
+        background needs.
+    -->
+    <style name="Theme.DriveCast" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/rich_black</item>
+        <item name="android:colorBackground">@color/rich_black</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- RichBlack, the palette's darkest entry. Mirrors ui/theme/Color.kt: this is the one place
+         the value has to be restated, because the window background is painted by the framework
+         before any Compose code runs. -->
+    <color name="rich_black">#001219</color>
+    <!--
+      RichBlack, behind the adaptive launcher icon. The foreground draws its own MidnightGreen
+      badge and paints out everything beyond it, so this layer is only ever seen in the corners a
+      non-circular mask leaves, where a dark surround is what makes the badge read as a circle.
+    -->
+    <color name="ic_launcher_background">#001219</color>
+</resources>
